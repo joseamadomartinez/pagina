@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+<button id="exportButton">Exportar a PDF</button>
+<div id="content">
+    </html><CENTER><h1> PORTADA CBTIS</h1></CENTER>
+
+    <h2>NOMBRE:<p> Cristowal Medina Lopez</p></h2> 
+    <h2>GRUPO:<p> 5-B</p></h2> 
+    <h2>ESPECIALIDAD:<p> Programacion</p></h2> 
+</div>
+<body>
+    <script>
+        document.getElementById('exportButton').addEventListener('click', function() {
+            const element = document.getElementById('content');
+            html2pdf()
+                .from(element)
+                .save('pagina.pdf');
+        });
+    </script>
+    <style>
+h1 {color:red }
+h2{ color: blue}
+    </style>
+    <style>
+        /* Botón de WhatsApp-estilo */
+        .whatsapp-btn {
+        
+        background-color: #25D366;
+        color: #fff;
+        border: none;
+        padding: 15px 30px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+        }
+        /* Botón de Messenger-estilo */
+        .messenger-btn {
+        
+        background-color: Blue;
+        color: #fff;
+        border: none;
+        padding: 15px 30px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+        
+        }
+        </style>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1398189.2518521673!2d6.904908121490316!3d46.80748942102307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c64ef6f596d61%3A0x5c56b5110fcb7b15!2sSuiza!5e0!3m2!1ses!2smx!4v1732816490661!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <a href="https://wa.me/526951135280" class="whatsapp-
+btn" target="_blank">Enviar Mensaje por WhatsApp</a>
+
+<a href="https://www.messenger.com/new"
+class="messenger-btn" target="_blank">Enviar Mensaje
+por Messenger</a>
+  
+  
+</body>
